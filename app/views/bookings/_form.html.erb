@@ -1,0 +1,48 @@
+<%= form_for([@hotel,@booking]) do |f| %>
+  <% if @booking.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@booking.errors.count, "error") %> prohibited this booking from being saved:</h2>
+
+      <ul>
+      <% @booking.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<div class="container">
+  <div class="row">
+
+    <div class="input-field">
+      <i class='material-icons prefix green-text'>today</i>
+      <%= f.label 'Fecha de ingreso', class: 'datepicker' %>
+      <%= f.text_field :date_in, class: 'datepicker' %>
+    </div>
+
+    <div class="input-field">
+      <i class='material-icons prefix red-text'>today</i>
+      <%= f.label 'Fecha de salida',class: 'datepicker' %>
+      <%= f.text_field :date_out , class: 'datepicker' %>
+    </div>
+
+    <div class="input-field">
+      <i class='material-icons prefix blue-text'>hotel</i>
+      <%= f.label 'Ingrese ID del hotel ' %>
+      <%= f.text_field :hotel_id %>
+    </div>
+    <br>
+    <div class="actions">
+      <%= f.submit 'Guardar', class: 'btn waves-effect waves-light blue darken-4' %>
+    </div>
+
+  </div>
+</div>
+    
+<% end %>
+<script>
+  $('.datepicker').pickadate({
+    selectMonths: true, // Creates a dropdown to control month
+    selectYears: 15 // Creates a dropdown of 15 years to control year
+  });
+</script>

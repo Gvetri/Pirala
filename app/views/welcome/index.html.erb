@@ -1,0 +1,126 @@
+<content>
+<!-- Barra de buscador -->
+<div class="container">
+	<h4 class="blue-text center"> Busca la ciudad que mas quieras para irte! </h4>
+	<%= form_tag("/search", method: "get") do %>
+	<%= label_tag(:q, "Busca un destino: ") %>
+	<%= text_field_tag(:q) %>
+	<%= submit_tag('Buscar!',class: "btn waves-effect waves-light") %>
+	<% end %>
+</div>
+<!-- Fin de buscador -->
+<!-- Inicio de los destinos -->
+<div class="container">
+	<div class="row">
+		<div class="col s12 m6 l6">
+			<div class="card small hoverable">
+				<div class="card-image">
+					<%= image_tag("milano.jpg",class:"shrinkToFit",size:"226") %>
+					<span class="card-title">Milano</span>
+				</div>
+				<div class="card-content">
+					<p>Visita la capital de la moda y el diseño,sus estructuras y el calcio!</p>
+				</div>
+				<div class="card-action">
+					<a href="#">Link para mas informacion</a>
+				</div>
+			</div>
+		</div>
+		<div class="col s12 m6 l6">
+			<div class="card small hoverable">
+				<div class="card-image">
+					<%= image_tag("londres.jpg",class:"shrinkToFit",size:"226") %>
+					<span class="card-title">Londres</span>
+				</div>
+				<div class="card-content">
+					<p>La ciudad de la reina y de los que no conocen un odontologo</p>
+				</div>
+				<div class="card-action">
+					<a href="#">Link para mas informacion</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Fin de los destinos -->
+<div class="container">
+	<h2 class="indigo-text center">Necesitas un hotel? </h2>
+</div>
+<!-- inicio slider -->
+<div class="container">
+	<div class="slider">
+		<ul class="slides">
+			<li>
+				<%= image_tag("hotel1.jpg",class:"shrinkToFit") %>
+				<div class="caption center-align">
+					<h3>Tenemos las mejores clases de hoteles!</h3>
+					<h5 class="light grey-text text-lighten-3">Desde los mas caros hasta los mas economicos.</h5>
+				</div>
+			</li>
+			<li>
+				<%= image_tag("hotel2.jpg",class:"shrinkToFit") %>
+				<div class="caption left-align">
+					<h3>Reserva ya!</h3>
+					<h5 class="light grey-text text-lighten-3">Y obten un 0% de descuento</h5>
+				</div>
+			</li>
+			<li>
+				<%= image_tag("hotel3.jpg",class:"shrinkToFit") %>
+				<div class="caption right-align">
+					<h3>Participa para ganarte un viaje a un hotel que no se parece en nada a este</h3>
+					<h5 class="light grey-text text-lighten-3">Por que ser lacras es nuestra mision.</h5>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+<!-- fin slider -->
+<!-- inicio recomendaciones -->
+<h2 class="center indigo-text">Quienes nos recomiendan? </h2>
+<div class="container">
+	<div class="row">
+		<div class="col s12 m4 l4">
+			<ul class="collection">
+				<li class="collection-item avatar">
+					<%= image_tag("chica2.jpg",class:"circle shrinkToFit") %>
+					<span class="title">Juana</span>
+					<p>La cubana <br>
+						Madre de fidel
+					</p>
+				</li>
+			</ul>
+			<p class="center-align">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur consequuntur maiores quam ipsam quaerat delectus enim, a beatae magnam, qui mollitia ratione hic recusandae ex optio numquam nemo iusto vero.</p>
+		</div>
+		<div class="col s12 m4 l4">
+			<ul class="collection">
+				<li class="collection-item avatar">
+					<%= image_tag("chica1.jpg",class:"circle shrinkToFit") %>
+					<span class="title">Petra</span>
+					<p>La que vende arepa
+					</p>
+				</li>
+			</ul>
+			<p class="center-align">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi architecto dolores unde recusandae, tenetur aliquam sed alias consequatur, dolore porro magnam voluptas nemo incidunt mollitia quas nostrum. Corporis quos, iure.</p>
+		</div>
+		<div class="col s12 m4 l4">
+			<ul class="collection">
+				<li class="collection-item avatar">
+					<%= image_tag("chica3.jpg",class:"circle shrinkToFit") %>
+					<span class="title">La china del negocio</span>
+					<p>No tengo vuelto quiele calamelo</p>
+				</li>
+			</ul>
+			<p class="center-align">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione nisi incidunt tenetur eos odit a delectus saepe maiores libero. Dolorem eius omnis, provident illum a temporibus laborum sed facilis hic!</p>
+		</div>
+	</div>
+</div>
+</content>
+<!-- fin recomendaciones -->
+<script type="text/javascript">
+	$(document).ready(function(){
+    $('.slider').slider({
+        full_width: true,
+        indicators: false});
+});
+</script>
+</html>

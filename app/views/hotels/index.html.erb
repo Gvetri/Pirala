@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+<h1 class="center">Hoteles</h1>
+<div class="container">
+  <div class="row">
+    <% @hotels.each do |hotel| %>
+    <div class="col s12 m6 l6">
+      <div class="card medium hoverable">
+        <div class="card-image">
+          <%= image_tag("milano.jpg",class:"shrinkToFit",size:"226") %>
+          <span class="card-title"> <%= hotel.name %> </span>
+        </div>
+        <div class="card-content">
+          <p> <%= hotel.about %> </p>
+        </div>
+        <div class="card-action">
+          <% if current_user.admin? %>
+          <%= link_to 'Mas informacion', hotel %>
+          <%= link_to 'Editar', edit_hotel_path(hotel) %>
+          <%= link_to 'Eliminar', hotel, method: :delete, data: { confirm: 'Estas seguro que deseas eliminar este hotel?' } %>
+          <% else %>
+          <%= link_to 'Mas informacion', hotel %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>
+<% if current_user.admin? %>
+<div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+  <!-- Hay que utilizar comillas simples en caso de que se quiera utilizar una clase dentro del link_to -->
+  <%= link_to "<i class='large material-icons'>note_add</i>".html_safe, new_hotel_path, :class => "btn-floating btn-large blue darken-4" %>
+</div>
+<% end %>

@@ -1,0 +1,56 @@
+<%= form_for(@hotel) do |f| %>
+<% if @hotel.errors.any? %>
+<div id="error_explanation">
+  <h2><%= pluralize(@hotel.errors.count, "error") %> prohibited this hotel from being saved:</h2>
+  <ul>
+    <% @hotel.errors.full_messages.each do |message| %>
+    <li><%= message %></li>
+    <% end %>
+  </ul>
+</div>
+<% end %>
+
+<div class="container">
+  <div class="row">
+    <div class="input-field col s12">
+      <i class='material-icons prefix blue-text'>face</i>
+      <%= f.label 'Nombre' %>
+      <%= f.text_field :name, class: "validate" %>
+    </div>
+    <div class="input-field col s12">
+      <i class='material-icons prefix blue-text'>email</i>
+      <%= f.label :email %>
+      <%= f.email_field :email, class: "validate" %>
+    </div>
+    <div class="input-field col s12">
+      <i class='material-icons prefix blue-text'>call</i>
+      <%= f.label 'telefono' %>
+      <%= f.telephone_field :phone, class: "validate" %>
+    </div>
+    <div class="input-field col s12">
+      <i class='material-icons prefix blue-text'>comment</i>
+      <%= f.label :acerca %><
+      <%= f.text_area :about, class: "materialize-textarea validate" %>
+    </div>
+    <div class="input-field col s12">
+      <i class='material-icons prefix yellow-text'>star rate</i>
+      <%= f.label :estrellas %>
+      <%= f.number_field :stars, class: "validate" %>
+    </div>
+    <div class="input-field col s12">
+      <i class='material-icons prefix blue-text'>add_location</i>
+      <%= f.label :direccion %>
+      <%= f.text_field :address, class: "validate" %>
+    </div>
+    <div class="input-field col s12">
+      <i class='material-icons prefix blue-text'>add_a_photo</i>
+      <%= f.label :photo_url %>
+      <%= f.text_field :photo_url %>
+    </div>
+    <br>
+    <div class="actions">
+      <%= f.submit 'Guardar', class: 'btn waves-effect waves-light blue darken-4' %>
+    </div>
+  </div>
+</div>
+<% end %>

@@ -1,0 +1,30 @@
+<div class="container">
+<h4 class="center-align blue-text">Iniciar sesion</h4>
+
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <div class="input-field">
+    <i class='material-icons prefix blue-text'>email</i>
+    <%= f.label :correo %><br />
+    <%= f.email_field :email, autofocus: true %>
+  </div>
+
+  <div class="input-field">
+    <i class='material-icons prefix blue-text'>vpn_key</i>
+    <%= f.label :password_label %><br />
+    <%= f.password_field :password, autocomplete: "off" %>
+  </div>
+
+  <% if devise_mapping.rememberable? -%>
+    <div class="field">
+      <%= f.check_box :remember_me %>
+      <%= f.label 'Mantenerme logueado' %>
+    </div>
+  <% end -%>
+<br>
+  <div class="actions">
+    <%= f.submit "Registrarse!",class: "btn waves-effect waves-light blue darken-4" %>
+  </div>
+<% end %>
+<br>
+<%= render "devise/shared/links" %>
+</div>

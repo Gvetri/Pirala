@@ -1,0 +1,31 @@
+<h4 class="center-align blue-text">Registrarse</h4>
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+<div class="container">
+  <div class="row">
+    <div class="input-field">
+      <i class='material-icons prefix blue-text'>email</i>
+      <%= f.label :correo %><br />
+      <%= f.email_field :email, autofocus: true %>
+    </div>
+    <div class="input-field">
+      <i class='material-icons prefix blue-text'>vpn_key</i>
+      <%= f.label :password_label %>
+      <%= f.password_field :password, autocomplete: "off" %>
+      <% if @minimum_password_length %>
+          <p>(<%= @minimum_password_length %> caracteres minimo)</p>
+      <% end %>
+    </div>
+    <div class="input-field">
+      <i class='material-icons prefix blue-text'>vpn_key</i>
+      <%= f.label :password_label_confirm %><br />
+      <%= f.password_field :password_confirmation, autocomplete: "off" %>
+    </div>
+    <div class="actions">
+      <%= f.submit "Registrarse!",class:"btn waves-effect waves-light" %>
+    </div>
+    <%= devise_error_messages! %>
+    <% end %>
+    <br>
+    <%= render "devise/shared/links" %>
+  </div>
+  </div>

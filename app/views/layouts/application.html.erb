@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Pirala</title>
+		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+		<%= stylesheet_link_tag "https://fonts.googleapis.com/icon?family=Material+Icons" %>
+		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+		<%= csrf_meta_tags %>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	</head>
+	<body>
+		<!-- Navbar -->
+		<header>
+			<nav>
+				<div class="blue nav-wrapper">
+					<a href="#" class="brand-logo center">Pirala!</a>
+					<%= link_to "Pirala!", root_path ,class: "brand-logo center" %>
+					<ul id="nav-mobile" class="right hide-on-med-and-down">
+						<li>
+							<% if user_signed_in? %>
+							<%= link_to "Hoteles","/hotels",class: "left" %>
+							<%= link_to "Reservas","/hotels/1/bookings", class: "left" %>
+							<!-- codigo para los link con materialicon -->
+							<%= link_to "<ul class='right hide-on-med-and-down'>
+								<li>
+									<i class='material-icons left'>perm_identity</i>#{current_user.name}
+								</li>
+							</ul>".html_safe,"/users/edit",class: "center" %>
+							<!-- fin del codigo para link con materialicon -->
+							<%=link_to "Cerrar sesion","/users/sign_out",class: "right", method: :delete%>
+							<% else %>
+							<!-- <p class="large material-icons left">perm_identity</p> -->
+							<%= link_to "Iniciar sesion","/users/sign_in" %>
+							<% end %>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		
+		<!-- Mostrar los notices como Toast -->
+		<% if notice != nil %>
+				<script type="text/javascript">
+				Materialize.toast('<%= notice %>', 4000)
+				</script>
+		<%end%>
+
+		<% if alert != nil %>
+			<script type="text/javascript">
+				Materialize.toast('<%= alert %>', 4000)
+				</script>
+		<% end %>
+		
+
+		<!-- final navbar -->
+		<main>
+		<%= yield %>
+		</main>
+		<footer class="blue page-footer">
+			<div class="footer-copyright">
+				<div class="container">
+					<p class="white-text center ">Pirala 2016 Todos los derechos reservados</p>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

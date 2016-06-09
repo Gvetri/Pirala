@@ -1,0 +1,37 @@
+<h3 class="center">Informacion</h3>
+<div class="container">
+  <div class="row">
+    <p>
+      <strong class="green-text">Nombre del hotel:</strong>
+      <%= @hotel.name %>
+    </p>
+    <p>
+      <strong class="green-text">Email:</strong>
+      <%= @hotel.email %>
+    </p>
+    <p>
+      <strong class="green-text">Telefono de contacto:</strong>
+      <%= @hotel.phone %>
+    </p>
+    <p>
+      <strong class="green-text">Acerca:</strong>
+      <%= @hotel.about %>
+    </p>
+    <p>
+      <strong class="green-text">Estrellas:</strong>
+      <%= @hotel.stars %>
+    </p>
+    <p>
+      <strong class="green-text">Direccion:</strong>
+      <%= @hotel.address %>
+    </p>
+    <p>
+      <strong class="green-text">Photo url:</strong>
+      <%= @hotel.photo_url %>
+    </p>
+  </div>
+  <%= link_to 'Editar', edit_hotel_path(@hotel) %> |
+  <%= link_to 'Atras', hotels_path %> |
+  <%= link_to 'Crear reserva', new_hotel_booking_path(@hotel)%>
+
+</div>

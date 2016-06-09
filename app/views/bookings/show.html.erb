@@ -1,0 +1,26 @@
+<p id="notice">
+<%= notice %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @booking.estado %>
+</p>
+
+<p>
+  <strong>Fecha de ingreso:</strong>
+  <%= @booking.date_in %>
+</p>
+
+<p>
+  <strong>Fecha de salida:</strong>
+  <%= @booking.date_out %>
+</p>
+
+<p>
+  <strong>Hotel donde se realizo la reserva:</strong>
+  <%= @booking.hotel.name %>
+</p>
+
+<%= link_to 'Editar', edit_booking_path(@booking) %> |
+<%= link_to 'Atras', root_path %>

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  status: false
+  date_in: 2016-06-06
+  date_out: 2016-06-06
+  hotel_id: 
+
+two:
+  status: false
+  date_in: 2016-06-06
+  date_out: 2016-06-06
+  hotel_id: 

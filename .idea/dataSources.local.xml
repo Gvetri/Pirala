@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails Pirala: development" uuid="1b722855-f6f2-49b0-8646-e8ad3489ec54">
+      <user-name>giuseppe</user-name>
+      <user-password>df9bdf98df99df9edf9f</user-password>
+      <schema-pattern>pirala_development.pg_catalog pirala_development.public</schema-pattern>
+      <default-schemas>pirala_development.public</default-schemas>
+    </data-source>
+    <data-source name="Rails Pirala: test" uuid="bff3d280-58c0-47ff-bc20-e65d2dbe1b0d">
+      <user-name>giuseppe</user-name>
+      <user-password>df9bdf98df99df9edf9f</user-password>
+      <schema-pattern>pirala_test.pg_catalog pirala_test.public</schema-pattern>
+      <default-schemas>pirala_test.public</default-schemas>
+    </data-source>
+    <data-source name="Rails Pirala: production" uuid="2ae0689f-3958-4032-8760-d07f7f0bd923">
+      <first-sync>true</first-sync>
+      <user-name>giuseppe</user-name>
+      <user-password>df9bdf98df99df9edf9f</user-password>
+    </data-source>
+  </component>
+</project>
