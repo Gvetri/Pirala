@@ -7,6 +7,13 @@
     <%= f.label 'Nombre' %><br />
     <%= f.text_field :name, autofocus: true,class: "validate" %>
   </div>
+
+  <div class="input-field col s12">
+    <i class='material-icons prefix blue-text'>face</i>
+    <%= f.label 'Apellido' %><br />
+    <%= f.text_field :last_name,class: "validate" %>
+  </div>
+
   <div class="input-field col s12">
     <i class='material-icons prefix blue-text'>email</i>
     <%= f.label 'Email' %><br />
@@ -27,13 +34,8 @@
     <%= f.label 'Confirmar Contraseña' %><br />
     <%= f.password_field :password_confirmation, autocomplete: "off",class: "validate" %>
   </div>
-  <div class="input-field col s12">
-    <i class='material-icons prefix red-text'>vpn_key</i>
-    <%= f.label 'Ingrese Contraseña actual (Es necesaria para guardar los cambios)' %> <br />
-    <%= f.password_field :current_password, autocomplete: "off",class: "validate" %>
-  </div>
   <div class="actions">
-    <%= f.submit "Guardar Cambios", class: "btn waves-effect waves-light" %>
+    <%= f.submit "Guardar Cambios", class: "btn waves-effect waves-light blue darken-4" %>
   </div>
   <% end %>
   <p class="red-text">Pulse este boton para cancelar su cuenta <%= button_to "Cancelar mi cuenta", registration_path(resource_name), data: { confirm: "Esta seguro que desea cancelar su cuenta?" }, method: :delete,class:"btn waves-effect waves-light red darken-4" %></p>

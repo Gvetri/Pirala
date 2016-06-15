@@ -5,9 +5,12 @@ Rails.application.routes.draw do
   end
 
   #devise_for :users
-  devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
+  devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks",:registrations => "registrations"}
 
-  resources :users
+  resources :users do
+    resources :bookings
+  end
+
   resources :bookings
   # devise_scope :user do
   #   get 'sign_in', :to => 'devise/sessions#new', :as => :new_user_session

@@ -3,7 +3,8 @@ class User < ActiveRecord::Base
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
     :recoverable, :rememberable, :trackable, :validatable,:omniauthable,:omniauth_providers => [:google_oauth2]
-
+  attr_accessor :current_password
+  has_many :bookings
   def self.connect_to_google(auth)
     data = auth.info
     where(provider: auth.provider, uid: auth.uid).first_or_create do |user|
