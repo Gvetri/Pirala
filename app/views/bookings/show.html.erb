@@ -1,26 +1,18 @@
-<p id="notice">
-<%= notice %>
-</p>
+<div class="Container center">
+ <div class="row">
 
-<p>
-  <strong>Status:</strong>
-  <%= @booking.estado %>
-</p>
-
-<p>
-  <strong>Fecha de ingreso:</strong>
-  <%= @booking.date_in %>
-</p>
-
-<p>
-  <strong>Fecha de salida:</strong>
-  <%= @booking.date_out %>
-</p>
-
-<p>
-  <strong>Hotel donde se realizo la reserva:</strong>
-  <%= @booking.hotel.name %>
-</p>
+   <ul class="collection with-header">
+     <li class="collection-header">
+       <h4>Informacion de la reserva</h4>
+     </li>
+     <li class="collection-item">Estado de la reserva: <%=@booking.estado %></li>
+     <li class="collection-item">Fecha de ingreso: <%= @booking.date_in %></li>
+     <li class="collection-item">Fecha de salida: <%= @booking.date_out %></li>
+     <li class="collection-item">Hotel de la reserva: <%= @booking.hotel.name %></li>
+   </ul>
 
 <%= link_to 'Editar', edit_booking_path(@booking) %> |
-<%= link_to 'Atras', root_path %>
+<%= link_to 'Atras', root_path %></div>
+
+
+</div>

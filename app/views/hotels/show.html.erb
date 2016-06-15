@@ -1,34 +1,18 @@
 <h3 class="center">Informacion</h3>
-<div class="container">
+<div class="container center">
   <div class="row">
-    <p>
-      <strong class="green-text">Nombre del hotel:</strong>
-      <%= @hotel.name %>
-    </p>
-    <p>
-      <strong class="green-text">Email:</strong>
-      <%= @hotel.email %>
-    </p>
-    <p>
-      <strong class="green-text">Telefono de contacto:</strong>
-      <%= @hotel.phone %>
-    </p>
-    <p>
-      <strong class="green-text">Acerca:</strong>
-      <%= @hotel.about %>
-    </p>
-    <p>
-      <strong class="green-text">Estrellas:</strong>
-      <%= @hotel.stars %>
-    </p>
-    <p>
-      <strong class="green-text">Direccion:</strong>
-      <%= @hotel.address %>
-    </p>
-    <p>
-      <strong class="green-text">Photo url:</strong>
-      <%= @hotel.photo_url %>
-    </p>
+    <ul class="collection with-header">
+      <li class="collection-header">
+        Nombre del hotel: <%=@hotel.name %>
+      </li>
+      <li class="collection-item">Email de contacto: <%= @hotel.email %></li>
+      <li class="collection-item">Telefono de contacto: <%= @hotel.phone %></li>
+      <li class="collection-item">Acerca: <%= @hotel.about %></li>
+      <li class="collection-item">Estrellas: <%= @hotel.stars %></li>
+      <li class="collection-item">Direccion: <%= @hotel.address %></li>
+      <li class="collection-item">Fotos: <%= @hotel.photo_url %></li>
+    </ul>
+
   </div>
   <%= link_to 'Editar', edit_hotel_path(@hotel) %> |
   <%= link_to 'Atras', hotels_path %> |
