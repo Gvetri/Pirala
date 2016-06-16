@@ -17,9 +17,9 @@
 					<%= link_to "Pirala!", root_path ,class: "brand-logo center" %>
 					<ul id="nav-mobile" class="right hide-on-med-and-down">
 						<li>
+              <%= link_to "Hoteles",hotels_path,class: "left" %>
 							<% if user_signed_in? %>
-							<%= link_to "Hoteles","/hotels",class: "left" %>
-							<%= link_to "Reservas","/hotels/1/bookings", class: "left" %>
+							<%= link_to "Reservas",bookings_path, class: "left" %>
 							<!-- codigo para los link con materialicon -->
 							<%= link_to "<ul class='right hide-on-med-and-down'>
 								<li>

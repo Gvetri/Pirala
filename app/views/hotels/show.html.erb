@@ -14,8 +14,10 @@
     </ul>
 
   </div>
+  <% if current_user.try(:admin?) %>
   <%= link_to 'Editar', edit_hotel_path(@hotel) %> |
+  <%end %>
   <%= link_to 'Atras', hotels_path %> |
-  <%= link_to 'Crear reserva', new_hotel_booking_path(@hotel)%>
+  <%= link_to 'Reservar!', new_hotel_booking_path(@hotel)%>
 
 </div>
