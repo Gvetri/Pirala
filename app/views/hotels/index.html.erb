@@ -12,7 +12,7 @@
           <p> <%= hotel.about %> </p>
         </div>
         <div class="card-action">
-          <% if current_user.admin? %>
+          <% if current_user.try(:admin?) %>
           <%= link_to 'Mas informacion', hotel %>
           <%= link_to 'Editar', edit_hotel_path(hotel) %>
           <%= link_to 'Eliminar', hotel, method: :delete, data: { confirm: 'Estas seguro que deseas eliminar este hotel?' } %>
@@ -25,7 +25,7 @@
     <% end %>
   </div>
 </div>
-<% if current_user.admin? %>
+<% if current_user.try(:admin?) %>
 <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
   <!-- Hay que utilizar comillas simples en caso de que se quiera utilizar una clase dentro del link_to -->
   <%= link_to "<i class='large material-icons'>note_add</i>".html_safe, new_hotel_path, :class => "btn-floating btn-large blue darken-4" %>

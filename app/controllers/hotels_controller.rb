@@ -1,6 +1,5 @@
 class HotelsController < ApplicationController
   before_action :set_hotel, only: [:show]
-  before_action :admin_user, only: [:show, :edit, :update, :destroy]
 
   # GET /hotels
   # GET /hotels.json
@@ -68,11 +67,6 @@ class HotelsController < ApplicationController
     @hotel = Hotel.find(params[:id])
   end
 
-  def admin_user
-    @hotel = Hotel.find(params[:id])
-    redirect_to(root_path) if !current_user.admin?
-    #TODO hay que hacer que si el usuario no es admin render partial user show para que muestre la info del hotel pero no como si fuese un admin
-  end
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def hotel_params

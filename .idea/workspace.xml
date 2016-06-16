@@ -1,28 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f50c6097-fe01-4091-8b1d-836f28b17c79" name="Default" comment="Agregado el nombre al usuario&#10;Agregado el">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/registrations_controller.rb" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml___jb_tmp___" afterPath="" />
+    <list default="true" id="f50c6097-fe01-4091-8b1d-836f28b17c79" name="Default" comment="Agregada relacion entre hoteles y reservas&#10;Modificada vistas de las reservas y hoteles&#10;Optimizado el metodo para saber si un usuario era admin&#10;Ahora para ver hoteles no es necesario iniciar sesion&#10;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Pirala.iml" afterPath="$PROJECT_DIR$/.idea/Pirala.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/bookings_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/bookings_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/user_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/user_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/booking.rb" afterPath="$PROJECT_DIR$/app/models/booking.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/hotels_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/hotels_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/bookings/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/bookings/_form.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/bookings/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/bookings/edit.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/bookings/index.html.erb" afterPath="$PROJECT_DIR$/app/views/bookings/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/bookings/show.html.erb" afterPath="$PROJECT_DIR$/app/views/bookings/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/hotels/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/hotels/edit.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/bookings/new.html.erb" afterPath="$PROJECT_DIR$/app/views/bookings/new.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/hotels/index.html.erb" afterPath="$PROJECT_DIR$/app/views/hotels/index.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/hotels/show.html.erb" afterPath="$PROJECT_DIR$/app/views/hotels/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
     </list>
     <ignored path="Pirala.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -52,74 +45,54 @@
       <file leaf-file-name="bookings_controller.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/bookings_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="558">
+            <state relative-caret-position="63">
               <caret line="46" column="55" selection-start-line="46" selection-start-column="55" selection-end-line="46" selection-end-column="55" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hotel.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/hotel.rb">
+      <file leaf-file-name="application.html.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
+            <state relative-caret-position="234">
+              <caret line="19" column="64" selection-start-line="19" selection-start-column="64" selection-end-line="19" selection-end-column="64" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hotels_controller.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/hotels_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-22">
-              <caret line="52" column="5" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="todolist.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="todolist.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/todolist.md">
-          <provider editor-type-id="MarkdownFxPreviewEditor">
-            <state />
-          </provider>
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="36">
-                <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="4" selection-end-column="81" />
+              <first_editor relative-caret-position="198">
+                <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/hotels/edit.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-              <folding />
-            </state>
+          <provider editor-type-id="MarkdownFxPreviewEditor">
+            <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/bookings/show.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="11" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/hotels/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
+            <state relative-caret-position="360">
+              <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/hotels/index.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="486">
+              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -146,16 +119,11 @@
         <option value="$PROJECT_DIR$/app/views/reserves/index.html.erb" />
         <option value="$PROJECT_DIR$/db/migrate/20160606222457_drop_reserves.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20160607030032_modify_bookings.rb" />
-        <option value="$PROJECT_DIR$/app/models/hotel.rb" />
         <option value="$PROJECT_DIR$/app/views/welcome/index.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-        <option value="$PROJECT_DIR$/app/views/bookings/new.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/bookings/_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/hotels_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/hotels/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/hotels/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/devise/shared/_links.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/db/migrate/20160609170224_add_last_name_to_user.rb" />
         <option value="$PROJECT_DIR$/app/controllers/user_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/users/RegistrationsController" />
@@ -166,14 +134,21 @@
         <option value="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/app/models/booking.rb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/bookings_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/bookings/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/hotels/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/bookings/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/hotels/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/bookings/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/hotels/edit.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/bookings/_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/bookings_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/bookings/edit.html.erb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/views/bookings/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/hotel.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/hotels_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/hotels/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/todolist.md" />
+        <option value="$PROJECT_DIR$/app/views/hotels/show.html.erb" />
       </list>
     </option>
   </component>
@@ -184,9 +159,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="25" />
-    <option name="width" value="1366" />
-    <option name="height" value="743" />
+    <option name="x" value="1366" />
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -213,20 +188,21 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane />
       </pane>
-      <pane id="RailsProjectView" />
-      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="hotel/edit&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/app/views/hotels/edit.html.erb&#10;hotels/show&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/app/views/hotels/show.html.erb&#10;show&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/app/views/bookings/show.html.erb&#10;hotel&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/app/models/hotel.rb&#10;hotels&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/app/controllers/hotels_controller.rb&#10;view/&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/app/views&#10;booking&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/app/models/booking.rb&#10;gemfile&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/Gemfile&#10;rou&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/config/routes.rb&#10;user.rb&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/app/models/user.rb&#10;bookings/index.&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/app/views/bookings/index.html.erb&#10;bookings/show&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/app/views/bookings/show.html.erb&#10;applicatio&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/app/views/layouts/application.html.erb&#10;routes.rb&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/config/routes.rb&#10;add_&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/db/migrate/20160609170224_add_last_name_to_user.rb&#10;user&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/app/controllers/user_controller.rb&#10;new&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/app/views/devise/registrations/new.html.erb&#10;pplica&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/app/views/layouts/application.html.erb&#10;edit&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/app/views/devise/registrations/edit.html.erb&#10;index.html&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/app/views/hotels/index.html.erb&#10;_form&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/app/views/hotels/_form.html.erb&#10;applica&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/app/views/layouts/application.html.erb&#10;index.&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/app/views/welcome/index.html.erb&#10;book&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/app/models/booking.rb&#10;bookin&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/app/controllers/bookings_controller.rb&#10;hotel.rb&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/app/models/hotel.rb&#10;booki&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/app/models/booking.rb&#10;modify&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/db/migrate/20160607030032_modify_bookings.rb&#10;index&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/app/views/bookings/index.html.erb&#10;layouts/appli&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/app/views/layouts/application.html.erb&#10;routes&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/config/routes.rb&#10;show.h&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/app/views/hotels/show.html.erb&#10;reserves/index.htm&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/app/views/reserves/index.html.erb&#10;reserve.r&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/app/models/reserve.rb&#10;hotel_contr&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/app/controllers/hotels_controller.rb&#10;show.html&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/app/views/hotels/show.html.erb&#10;show.ht&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/app/views/reserves/show.html.erb&#10;views/&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/app/views" />
+    <property name="SearchEverywhereHistoryKey" value="hotels/index&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/app/views/hotels/index.html.erb&#10;hotels/show&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/app/views/hotels/show.html.erb&#10;pplication&#9;null&#9;null&#10;index.html&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/app/views/bookings/index.html.erb&#10;bookings/edit&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/app/views/bookings/edit.html.erb&#10;application&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/app/views/layouts/application.html.erb&#10;outes&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/config/routes.rb&#10;_form&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/app/views/bookings/_form.html.erb&#10;new&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/app/views/bookings/new.html.erb&#10;routes&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/config/routes.rb&#10;schema.rb&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/db/schema.rb&#10;hotel/edit&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/app/views/hotels/edit.html.erb&#10;show&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/app/views/bookings/show.html.erb&#10;hotel&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/app/models/hotel.rb&#10;hotels&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/app/controllers/hotels_controller.rb&#10;view/&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/app/views&#10;booking&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/app/models/booking.rb&#10;gemfile&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/Gemfile&#10;rou&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/config/routes.rb&#10;user.rb&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/app/models/user.rb&#10;bookings/index.&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/app/views/bookings/index.html.erb&#10;bookings/show&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/app/views/bookings/show.html.erb&#10;applicatio&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/app/views/layouts/application.html.erb&#10;routes.rb&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/config/routes.rb&#10;add_&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/db/migrate/20160609170224_add_last_name_to_user.rb&#10;user&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/app/controllers/user_controller.rb&#10;pplica&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/app/views/layouts/application.html.erb&#10;edit&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/app/views/devise/registrations/edit.html.erb&#10;applica&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/app/views/layouts/application.html.erb&#10;index.&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/app/views/welcome/index.html.erb&#10;book&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/app/models/booking.rb&#10;bookin&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/app/controllers/bookings_controller.rb&#10;hotel.rb&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/app/models/hotel.rb&#10;booki&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/app/models/booking.rb&#10;modify&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/db/migrate/20160607030032_modify_bookings.rb&#10;index&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/app/views/bookings/index.html.erb&#10;layouts/appli&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/app/views/layouts/application.html.erb&#10;show.h&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/app/views/hotels/show.html.erb&#10;reserves/index.htm&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/app/views/reserves/index.html.erb&#10;reserve.r&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/app/models/reserve.rb&#10;hotel_contr&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/app/controllers/hotels_controller.rb&#10;show.html&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/app/views/hotels/show.html.erb&#10;show.ht&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/app/views/reserves/show.html.erb&#10;views/&#9;FILE&#9;file:///home/giuseppe/Proyectos/Pirala/app/views" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/bin/node" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -442,12 +418,21 @@
       <workItem from="1465690133277" duration="218000" />
       <workItem from="1465857015577" duration="3508000" />
       <workItem from="1465915675114" duration="3948000" />
-      <workItem from="1466000463418" duration="2782000" />
+      <workItem from="1466000463418" duration="4484000" />
+      <workItem from="1466011676560" duration="16608000" />
     </task>
+    <task id="LOCAL-00001" summary="Agregar insertar nombre en el registro&#10;Hacer que modifique el nombre en el editar usuario normal/Logueado con Google +&#10;Acomodar boton en en el sign_in que diga iniciar sesion en vez de registrarse&#10;Arreglados errores menores como el texto en los show y otras cosas menores">
+      <created>1466003382232</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1466003382232</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50363000" />
+    <option name="totallyTimeSpent" value="68673000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -459,27 +444,27 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1366" height="743" extended-state="6" />
+    <frame x="1366" y="0" width="1440" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23942599" sideWeight="0.48238897" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32689556" sideWeight="0.48238897" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924962" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32839507" sideWeight="0.5028612" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924962" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2654321" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962963" sideWeight="0.49713877" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43797857" sideWeight="0.49713877" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43703705" sideWeight="0.49713877" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24622357" sideWeight="0.517611" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32839507" sideWeight="0.49713877" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962963" sideWeight="0.49713877" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962963" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -493,20 +478,15 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Agregar insertar nombre en el registro&#10;Hacer que modifique el nombre en el editar usuario normal/Logueado con Google +&#10;Acomodar boton en en el sign_in que diga iniciar sesion en vez de registrarse&#10;Arreglados errores menores como el texto en los show y otras cosas menores" />
+    <option name="LAST_COMMIT_MESSAGE" value="Agregar insertar nombre en el registro&#10;Hacer que modifique el nombre en el editar usuario normal/Logueado con Google +&#10;Acomodar boton en en el sign_in que diga iniciar sesion en vez de registrarse&#10;Arreglados errores menores como el texto en los show y otras cosas menores" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/reserves/_form.html.erb" />
     <entry file="file://$PROJECT_DIR$/app/views/reserves/new.html.erb" />
     <entry file="file://$PROJECT_DIR$/app/views/reserves/index.html.erb" />
     <entry file="file://$PROJECT_DIR$/app/controllers/reserves_controller.rb" />
@@ -574,13 +554,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/bookings/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/devise/shared/_links.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -607,7 +580,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="2" column="42" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -626,21 +598,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="40" column="43" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -652,7 +609,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="2" column="66" selection-start-line="2" selection-start-column="66" selection-end-line="2" selection-end-column="66" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -660,7 +616,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
           <caret line="24" column="87" selection-start-line="24" selection-start-column="87" selection-end-line="24" selection-end-column="87" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -668,31 +623,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/bookings/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="31" column="34" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/bookings/edit.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/bookings/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -700,6 +630,44 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/hotels/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/devise/sessions/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-216">
+          <caret line="3" column="36" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/schema.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/bookings/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="47" selection-start-line="0" selection-start-column="47" selection-end-line="0" selection-end-column="47" />
           <folding />
         </state>
       </provider>
@@ -712,50 +680,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/hotels/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/bookings_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="46" column="55" selection-start-line="46" selection-start-column="55" selection-end-line="46" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/hotels/edit.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/bookings/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
-          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/hotels/new.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/bookings/edit.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+        <state relative-caret-position="180">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/devise/sessions/new.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/bookings/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-216">
-          <caret line="3" column="36" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
+        <state relative-caret-position="522">
+          <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="72">
+          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/hotels_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-22">
-          <caret line="52" column="5" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/bookings_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="46" column="55" selection-start-line="46" selection-start-column="55" selection-end-line="46" selection-end-column="55" />
+        <state relative-caret-position="-675">
+          <caret line="1" column="41" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
           <folding />
         </state>
       </provider>
@@ -768,34 +744,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/bookings/show.html.erb">
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="11" selection-end-column="8" />
+        <state relative-caret-position="18">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/hotels/show.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/bookings/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
+        <state relative-caret-position="198">
+          <caret line="17" column="59" selection-start-line="17" selection-start-column="59" selection-end-line="17" selection-end-column="59" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/hotels/edit.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+        <state relative-caret-position="234">
+          <caret line="19" column="64" selection-start-line="19" selection-start-column="64" selection-end-line="19" selection-end-column="64" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/todolist.md">
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="3" column="59" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="59" />
@@ -803,11 +776,30 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="36">
-            <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="4" selection-end-column="81" />
+          <first_editor relative-caret-position="198">
+            <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/hotels/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/hotels/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
