@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
+  acts_as_token_authenticatable
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
@@ -18,6 +19,15 @@ class User < ActiveRecord::Base
     avatar_url = URI.parse(uri)
     avatar_url.scheme = 'https'
     avatar_url.to_s
+  end
+
+  def as_json(options={})
+    {
+        id: self.id,
+        email: self.email,
+        authentication_token: self.authentication_token,
+        name: self.name
+    }
   end
 
 end

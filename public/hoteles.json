@@ -1,0 +1,22 @@
+{
+    "hotels": [
+        {
+                "id": "200",
+                "name": "Ravi Tamada",
+                "email": "ravi@gmail.com",
+                "address": "xx-xx-xxxx,x - street, x - country",
+                "stars" : "4",
+                "phone": "0412412311",
+                "about": "asdasdasda"
+        },
+        {
+                "id": "201",
+                "name": "Johnny Depp",
+                "email": "johnny_depp@gmail.com",
+                "address": "xx-xx-xxxx,x - street, x - country",
+                "stars" : "4",
+                "phone": "0412321312",
+                "about": "asdasdasda"
+        },
+  ]
+}

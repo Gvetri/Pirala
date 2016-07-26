@@ -1,0 +1,22 @@
+{
+    hotels: [
+        {
+                id: "200",
+                name: "Hotel numero1",
+                email: "hotel1@gmail.com",
+                address: "xx-xx-xxxx,x - street, x - country",
+                stars: "4",
+                phone: "0412412311",
+                about: "asdasdasda"
+        },
+        {
+                id: "201",
+                name: "Hotel numero 2",
+                email: "hotel2@gmail.com",
+                address: "xx-xx-xxxx,x - street, x - country",
+                stars: "4",
+                phone: "0412321312",
+                about: "asdasdasda"
+        }
+  ]
+}

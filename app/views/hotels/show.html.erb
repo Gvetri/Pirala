@@ -8,7 +8,14 @@
       <li class="collection-item">Email de contacto: <%= @hotel.email %></li>
       <li class="collection-item">Telefono de contacto: <%= @hotel.phone %></li>
       <li class="collection-item">Acerca: <%= @hotel.about %></li>
-      <li class="collection-item">Estrellas: <%= @hotel.stars %></li>
+      <li class="collection-item">Estrellas <br>
+      <% c = 0
+      until c == @hotel.stars
+        c += 1
+      %>
+        <i class="small material-icons yellow">star</i>
+          <%end%>
+      </li>
       <li class="collection-item">Direccion: <%= @hotel.address %></li>
       <li class="collection-item">Fotos: <%= @hotel.photo_url %></li>
     </ul>
