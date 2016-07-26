@@ -4,16 +4,17 @@
 		<title>Pirala</title>
 		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
 		<%= stylesheet_link_tag "https://fonts.googleapis.com/icon?family=Material+Icons" %>
-		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 		<%= csrf_meta_tags %>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	</head>
 	<body>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 		<!-- Navbar -->
 		<header>
 			<nav>
 				<div class="blue nav-wrapper">
 					<a href="#" class="brand-logo center">Pirala!</a>
+          <%= link_to '<i class="material-icons">menu</i>'.html_safe, "#", :"data-activates" => "mobile-demo", class: "button-collapse right"%>
 					<%= link_to "Pirala!", root_path ,class: "brand-logo center" %>
 					<ul id="nav-mobile" class="right hide-on-med-and-down">
 						<li>
@@ -34,6 +35,40 @@
 							<% end %>
 						</li>
 					</ul>
+
+          <!--Inicio del navbar-collapsable para mobiles-->
+          <ul class="side-nav blue" id="mobile-demo">
+            <% if user_signed_in? %>
+                <li>
+                  <i class='small material-icons left'>perm_identity</i>
+                  <%= link_to "#{current_user.name}","/users/edit",class: "white-text" %>
+                </li>
+                <li>
+                  <i class='small material-icons left'>hotel</i>
+                  <%= link_to "Hoteles",hotels_path,class: "white-text" %>
+                </li>
+                <li>
+                  <i class='small material-icons left'>today</i>
+                  <%= link_to 'Reservas', bookings_path , class: 'white-text' %>
+                </li>
+                <li>
+                  <i class='small material-icons left'>exit_to_app</i>
+                  <%=link_to 'Cerrar sesion', '/users/sign_out', class: 'white-text', method: :delete%>
+                </li>
+            <%else %>
+
+                <li>
+                  <i class='small material-icons left'>account_box</i>
+              <%= link_to 'Iniciar Sesion', '/users/sign_in', class: 'white-text' %>
+            </li>
+                <li>
+                  <i class='small material-icons left'>hotel</i>
+                  <%= link_to "Hoteles",hotels_path,class: "white-text" %>
+                </li>
+            <%end%>
+          </ul>
+
+          <!--Final del navbar mobile-->
 				</div>
 			</nav>
 		</header>

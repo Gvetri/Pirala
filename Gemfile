@@ -46,4 +46,5 @@ end
  gem 'omniauth-oauth2'
  gem "omniauth-google-oauth2"
 
+gem 'simple_token_authentication', '~> 1.0'
 

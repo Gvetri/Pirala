@@ -1,5 +1,17 @@
 class RegistrationsController < Devise::RegistrationsController
 
+  def create
+    @user = User.create(user_params)
+    user = @user
+    if @user.save
+      # render :json => {:state => {:code => 0}, :data => @user }
+      render json: @user
+    else
+      render :json => {:state => {:code => 1, :messages => @user.errors.full_messages} }
+    end
+
+  end
+
   def new
     super
   end
@@ -24,5 +36,10 @@ class RegistrationsController < Devise::RegistrationsController
   def account_update_params
     params[:user].permit(:name, :last_name) #Allows the user to only update this params
   end
+
+  def user_params
+    params.require(:user).permit(:email, :password,:name,:last_name,:status)
+  end
+
 
 end
