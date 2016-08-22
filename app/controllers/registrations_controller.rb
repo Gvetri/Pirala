@@ -1,15 +1,31 @@
 class RegistrationsController < Devise::RegistrationsController
 
   def create
-    @user = User.create(user_params)
+    @user = User.create(sign_up_params)
     user = @user
-    if @user.save
-      # render :json => {:state => {:code => 0}, :data => @user }
-      render json: @user
-    else
-      render :json => {:state => {:code => 1, :messages => @user.errors.full_messages} }
-    end
 
+    respond_to do |format|
+      format.json {
+        if @user.save
+          # render :json => {:state => {:code => 0}, :data => @user }
+          render json: @user
+        else
+          render :json => {:state => {:code => 1, :messages => @user.errors.full_messages} }
+        end
+      }
+      format.html{
+        if @user.save
+          sign_up(user,@user)
+          redirect_to root_path
+          set_flash_message! :notice, :signed_up
+        else
+          puts 'probando else'
+          render :new
+          @user.errors.full_messages
+        end
+      }
+
+    end
   end
 
   def new
