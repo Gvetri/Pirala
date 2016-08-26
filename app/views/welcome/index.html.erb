@@ -2,10 +2,9 @@
 <!-- Barra de buscador -->
 <div class="container">
 	<h4 class="blue-text center"> Busca la ciudad que mas quieras para irte! </h4>
-	<%= form_tag("/search", method: "get") do %>
-	<%= label_tag(:q, "Busca un destino: ") %>
-	<%= text_field_tag(:q) %>
-	<%= submit_tag('Buscar!',class: "btn waves-effect waves-light") %>
+	<%= form_tag hotels_path, method: 'get' do %>
+	<%= text_field_tag :search, params[:search] %>
+	<%= submit_tag('Buscar',name: nil,class: "btn waves-effect waves-light") %>
 	<% end %>
 </div>
 <!-- Fin de buscador -->
