@@ -4,7 +4,11 @@ class HotelsController < ApplicationController
   # GET /hotels
   # GET /hotels.json
   def index
+    if params[:search].nil?
     @hotels = Hotel.all
+    else
+      @hotels = Hotel.search(params[:search])
+    end
   end
 
   # GET /hotels/1

@@ -1,15 +1,11 @@
 <content>
 <!-- Barra de buscador -->
 <div class="container">
-	<div class="row">
-    <div class="col s12 m12 l12"><h4 class="blue-text center"> Busca la ciudad que mas quieras para irte! </h4>
-	<%= form_tag("/search", method: "get") do %>
-	<%= label_tag(:q, "Busca un destino: ") %>
-	<%= text_field_tag(:q) %>
-	<%= submit_tag('Buscar!',class: "btn waves-effect waves-light blue") %>
+	<h4 class="blue-text center"> Busca la ciudad que mas quieras para irte! </h4>
+	<%= form_tag hotels_path, method: 'get' do %>
+	<%= text_field_tag :search, params[:search] %>
+	<%= submit_tag('Buscar',name: nil,class: "btn waves-effect waves-light") %>
 	<% end %>
-    </div>
-  </div>
 </div>
 <!-- Fin de buscador -->
 <!-- Inicio de los destinos -->
