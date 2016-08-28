@@ -18,3 +18,7 @@ main {
 .slider li img{
 	opacity:0.6;
 }
+
+ *::-moz-placeholder {
+  color: #212121;
+ }

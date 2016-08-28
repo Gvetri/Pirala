@@ -5,7 +5,9 @@ module Api
       respond_to :json
 
       def index
-        respond_with Hotel.all
+        custom_header_value = request.headers['x-name']
+        @hotels = Hotel.search(custom_header_value)
+        respond_with hotels: @hotels
       end
 
       def show
